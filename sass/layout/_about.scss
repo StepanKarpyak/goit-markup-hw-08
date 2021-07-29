@@ -1,0 +1,25 @@
+.about-title{
+    display: flex;
+}
+.about:not(:first-child){
+    margin-left: 30px;
+}
+.content{
+    display:block;
+    flex-basis: calc((100% - 3 * 30px)/4);
+}
+.about-main{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;    
+}
+.about-main-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--p-text-color);   
+}
