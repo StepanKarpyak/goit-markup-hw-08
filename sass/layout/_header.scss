@@ -2,15 +2,7 @@
     .menu,
     .contacts-link {
         display: none;
-    }
-    
-}
-.header{
-    width: 480px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 15px;
-
+    }    
 }
 .burger-btn {
     background-color: transparent;
@@ -21,9 +13,28 @@
     &__icon {
         width: 40px;
         height: 40px;
-        fill: #ffffff;
+        fill: var (--main-color);
     }
 }
+.header-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+// @media screen and (min-width: 100v) {
+//     .logo {
+//     width: 480px;
+//     // margin-top: 16px;
+//     // margin-bottom: 16px;
+//     // margin-left: 15px;
+//     background-color: var (--secondary-color);
+//     }
+    
+}
+
+
+
 .mobile-menu {
     position: fixed;
     z-index: 100;
@@ -38,11 +49,11 @@
     pointer-events: none;
     transition: opacity 500ms linear, visibility 500ms linear;
 }
-.mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+// .mobile-menu.is-open {
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: auto;
+// }
 
 .close-btn {
     width: 40px;
