@@ -1,60 +1,80 @@
-.team-our{
-}
-.team-list{
-    display: flex;
-}
-.team{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;   
-}
-.team-color{
+.team-color {
     background-color: var(--our-team-color);
+    display: block;
 }
-.team-list{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 3*30px) / 4);
-    margin-top: -30px;
-    margin-left: -30px;
+@media screen and (min-width: 480px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
-.team-item{
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    .item-list {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-list {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+    }
+    .section-title {
+        margin-bottom: 50px;
+    }
+}
+
+.team-item {
+    background-color: var(--secondary-color);
     padding: 30px;
-    background-color:var(--secondary-color);
     text-align: center;
 }
-.iteam-list{
+
+.item-list {
     margin-top: 30px;
-    margin-left: 30px;
+    // margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team-name{
+.team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;   
 }
-.time-position{
+.time-position {
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--p-text-color);
+    color: var(--description-color);
+    margin-bottom: 16px;
 }
+
 .social-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
+    justify-content: center;
+    margin-left: 10px;
 }
+
 .social-list-icon {
     width: 20px;
     height: 20px;
 }
+
 .social-list-link {
     display: flex;
     justify-content: center;
@@ -65,9 +85,85 @@
     fill: currentColor;
     color: var(--description-color);
     transition: background-color var(--animation), fill var(--animation);
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-color);
+        background-color: var(--accent-color);
+    }
 }
-.social-list-link:hover,
-.social-list-link:focus {
-    fill: var(--secondary-color);
-    background-color: var(--accent-color);
-}
+
+
+// .team-our{
+// }
+// .team-list{
+//     display: flex;
+// }
+// .team{
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;   
+// }
+// .team-color{
+//     background-color: var(--our-team-color);
+// }
+// .team-list{
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-basis: calc((100% - 3*30px) / 4);
+//     margin-top: -30px;
+//     margin-left: -30px;
+// }
+// .team-item{
+//     padding: 30px;
+//     background-color:var(--secondary-color);
+//     text-align: center;
+// }
+// .iteam-list{
+//     margin-top: 30px;
+//     margin-left: 30px;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+// .team-name{
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;   
+// }
+// .time-position{
+//     margin-top: 10px;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: var(--p-text-color);
+// }
+// .social-list {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 16px;
+// }
+// .social-list-icon {
+//     width: 20px;
+//     height: 20px;
+// }
+// .social-list-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     fill: currentColor;
+//     color: var(--description-color);
+//     transition: background-color var(--animation), fill var(--animation);
+// }
+// .social-list-link:hover,
+// .social-list-link:focus {
+//     fill: var(--secondary-color);
+//     background-color: var(--accent-color);
+// }

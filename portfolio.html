@@ -18,11 +18,11 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
     <main>
         <!-- HEADER -->
         <header class="header">
-            <div class="conteiner header-conteiner">
+            <div class="container header-container">
                 <nav class="navigation">
                     <a class="logo link" lang="en" href="./"><span class="link logo-blue">Web</span>Studio</a>
                     <ul class="menu list">
@@ -50,8 +50,8 @@
                 </ul>
             </div>
         </header>
-        <section class="section">
-            <div class="conteiner">
+        <section class="section portfolio-section">
+            <div class="container">
                 <h1 class="visualy-hidden">Портфоліо</h1>
                 <!--panel button-->
                 <h2 class="visualy-hidden">Панель кнопок</h2>
@@ -74,11 +74,33 @@
                 </ul>
                 <!--panel pictures-->
                 <h2 class="visualy-hidden">Послуги що надаємо</h2>
-                <ul class="menu-portfolio">
+                <ul class="menu-portfolio   ">
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-1.jpg" alt="макет сайту на ноутбуку" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope.webp   1x,
+                                        ./images/desktope/portfolio/img_desktope@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile.jpg" alt="макет сайту на ноутбуку">
+                                </picture>
                                 <p class="label-portfolio-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на
                                     защищённые сервера конкурентов.</p>
@@ -92,7 +114,30 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-2.jpg" alt="2 спортсмени з м'ячем" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope1.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope1@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope1.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope1.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet1.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet1@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet1.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet1@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile1.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile1@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile1.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile1@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile1.jpg" alt="2 спортсмени з м'ячем">
+                                </picture>
+
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Rem cumque ut atque odit perspiciatis earum doloribus labore harum laudantium!
                                     Architecto ipsa optio dolores alias, asperiores blanditiis sapiente reiciendis nam
@@ -107,7 +152,29 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-3.jpg" alt="логотип ресторану" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope2.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope2@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope2.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope2.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet2.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet2@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet2.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet2@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile2.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile2@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile2.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile2@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile2.jpg" alt="логотип ресторану">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum, dolor sit amet consectetur adipisicing
                                     elit. In, porro qui esse
                                     quisquam, exercitationem illo maxime fugit mollitia ex totam dolore eos aliquam?
@@ -122,7 +189,29 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-4.jpg" alt="навушники" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope3.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope3@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope3.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope3.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet3.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet3@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet3.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet3@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile3.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile3@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile3.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile3@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile3.jpg" alt="навушники">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Enim iure minima officiis
                                     excepturi assumenda deleniti, et eius labore voluptate consequatur impedit facere
@@ -138,7 +227,30 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-5.jpg" alt="2 коробки біла і коричнева" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope4.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope4@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope4.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope4.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet4.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet4@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet4.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet4@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile4.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile4@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile4.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile4@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile4.jpg"
+                                        alt="2 коробки біла і коричнева">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quibusdam laborum, expedita
                                     libero sunt corporis voluptate omnis natus at quos odio! Asperiores voluptatum
@@ -153,8 +265,30 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-6.jpg" alt="картинка на моніторі комп'ютера"
-                                    width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope5.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope5@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope5.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope5.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet5.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet5@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet5.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet5@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile5.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile5@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile5.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile5@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile5.jpg"
+                                        alt="картинка на моніторі комп'ютера">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Fugiat laborum quidem et
                                     quisquam, sapiente neque incidunt? Asperiores, illo iusto pariatur ad numquam error
@@ -169,7 +303,30 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-7.jpg" alt="журнал в розгорнотому виді" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope6.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope6@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope6.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope6.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet6.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet6@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet6.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet6@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile6.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile6@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile6.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile6@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile6.jpg"
+                                        alt="журнал в розгорнотому виді">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Facilis expedita inventore
                                     soluta fugiat, aliquid, vel veniam, voluptatibus itaque tempore enim iste impedit
@@ -184,7 +341,29 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-8.jpg" alt="бірка від чогось" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope7.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope7@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope7.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope7.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet7.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet7@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet7.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet7@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile7.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile7@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile7.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile7@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile7.jpg" alt="бірка товару">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Rerum error a ut unde nemo
                                     temporibus quidem vero laudantium eius illo neque ex facere harum rem, nesciunt
@@ -199,7 +378,30 @@
                     <li class="list portfolio-list">
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
-                                <img src="./imiges/portfolio/img-9.jpg" alt="людина працює з ноутбуком" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope8.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope8@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 1200px)" srcset="
+                                        ./images/desktope/portfolio/img_desktope8.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope8.@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet8.webp    1x,
+                                        ./images/tablet/portfolio/img_tablet8@2x.webp 2x
+                                        " type="image/webp" />
+                                    <source media="(min-width: 768px)" srcset="
+                                        ./images/tablet/portfolio/img_tablet8.jpg    1x,
+                                        ./images/tablet/portfolio/img_tablet8@2x.jpg 2x" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile8.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile8@2x.webp 2x" type="image/webp" />
+                                    <source media="(min-width:260px)" srcset="
+                                        ./images/mobile/portfolio/img_mobile8.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile8@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile8.jpg"
+                                        alt="людина працює з ноутбуком">
+                                </picture>
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Eaque, perferendis odit.
                                     Illo omnis obcaecati ad pariatur tempora dolore quibusdam est fuga nam in alias
@@ -215,7 +417,7 @@
             </div>
         </section>
         <footer class="footer">
-            <div class="conteiner footer-section">
+            <div class="container footer-section">
                 <div class="footer-section-nav">
                     <address class="footer-nav">
                         <a class="logo-foot link" lang="en" href="./"><span class="logo-blue link">Web</span>Studio</a>
@@ -226,10 +428,10 @@
                                     пр-т Леси Украинки, 26</a>
                             </li>
                             <li class="footer-item">
-                                <a class="contacts link" href="mailto:info@example.com">info@example.com</a>
+                                <a class="foot-contacts link" href="mailto:info@example.com">info@example.com</a>
                             </li>
                             <li class="footer-item">
-                                <a class="contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
+                                <a class="foot-contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
@@ -240,28 +442,28 @@
                         <li class="list social-list-item">
                             <a href="" class="social-list-link-footer">
                                 <svg class="social-list-icon">
-                                    <use href="./imiges/svg/sprite.svg#icon-instagram"></use>
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="list social-list-item">
                             <a href="" class="social-list-link-footer">
                                 <svg class="social-list-icon">
-                                    <use href="./imiges/svg/sprite.svg#icon-twitter"></use>
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="list social-list-item">
                             <a href="" class="social-list-link-footer">
                                 <svg class="social-list-icon">
-                                    <use href="./imiges/svg/sprite.svg#icon-facebook"></use>
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="list social-list-item">
                             <a href="" class="social-list-link-footer">
                                 <svg class="social-list-icon">
-                                    <use href="./imiges/svg/sprite.svg#icon-linkedin"></use>
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
@@ -271,11 +473,11 @@
                     <p class="footer-text">Подпишитесь на рассылку</p>
                     <form class="footer-form-label">
                         <label>
-                            <input class="footer-input" type="email" name="user-mail" required placeholder="E-mail" />
+                            <input class="footer-input" type="email" name="user-mail" placeholder="E-mail" required />
                         </label>
                         <button class="footer-button" type="submit">Подписаться
                             <svg class="footer-icon" width="24" height="24">
-                                <use href="./imiges/svg/sprite.svg#icon-send"></use>
+                                <use href="./images/sprite.svg#icon-send"></use>
                             </svg>
                         </button>
                     </form>

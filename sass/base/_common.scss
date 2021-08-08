@@ -48,7 +48,13 @@ text{
     color: var(--main-color);
 }
 body {
-    font-family:var(--main-font);    
+    background-color: var(--secondary-color);    
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: var(--main-font);
+    overflow-x: hidden;
 }
 .section{
     padding-top: 94px;
