@@ -19,7 +19,7 @@
 
 <!-- BODY-->
 
-<body style="overflow-x: hidden;">
+<body>
     <!-- HEADER -->
     <header class="header">
         <div class="container header-container">
@@ -48,7 +48,7 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="burger-btn" type="button" data-menu-open>
+            <button class="burger-btn btn" type="button" data-menu-open>
                 <svg class="burger-btn-icon">
                     <use href="./images/mobile/sprite_mobile.svg#hamburger"></use>
                 </svg>
@@ -62,31 +62,32 @@
                         <use href="./images/mobile/sprite_mobile.svg#hamburger-close"></use>
                     </svg>
                 </button>
-                <ul class="mobile-navigation">
+                <ul class="mobile-navigation list">
                     <li class="mobile-item">
-                        <a class="mobile-link" href="./index.html">Студия</a>
+                        <a class="mobile-link link current" href="./index.html">Студия</a>
                     </li>
                     <li class="mobile-item">
-                        <a class="mobile-link" href="./portfolio.html">Портфолио</a>
+                        <a class="mobile-link link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="mobile-item">
-                        <a class="mobile-link" href="">Контакты</a>
+                        <a class="mobile-link link" href="">Контакты</a>
                     </li>
                 </ul>
                 <div class="monile-menu-contacts">
-                    <ul class="contacts">
+                    <ul class="contacts list">
                         <li class="mobile-contacts-item">
-                            <a class="mobile-contacts-link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+                            <a class="mobile-contacts-link link" href="tel:+380961111111"> +38 096 111 11 11</a>
                         </li>
                         <li class="mobile-contacts-item">
-                            <a class="mobile-mail-link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                            <a class="mobile-mail-link link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
                         </li>
                     </ul>
-                    <ul class="mobile-socials">
-                        <li class="mobile-socials-item"><a class="mobile-socials-link" href="">Instagram</a></li>
-                        <li class="mobile-socials-item"><a class="mobile-socials-link" href="">Twitter</a></li>
-                        <li class="mobile-socials-item"><a class="mobile-socials-link" href="">Facebook</a></li>
-                        <li class="mobile-socials-item"><a class="mobile-socials-link" href="">LinkedIn</a></li>
+                    <ul class="mobile-socials list">
+                        <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Instagram</a></li>
+                        <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Twitter</a></li>
+                        <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Facebook</a></li>
+                        <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +96,7 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <div class="conteiner hero-container">
+            <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -639,8 +640,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
-    <script scr="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

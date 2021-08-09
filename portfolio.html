@@ -18,16 +18,16 @@
 
 </head>
 
-<body style="overflow-x: hidden;">
+<body>
     <main>
         <!-- HEADER -->
         <header class="header">
             <div class="container header-container">
                 <nav class="navigation">
-                    <a class="logo link" lang="en" href="./"><span class="link logo-blue">Web</span>Studio</a>
+                    <a class="logo logo-head link" lang="en" href=""><span class="link logo-blue">Web</span>Studio</a>
                     <ul class="menu list">
                         <li class="nav-item">
-                            <a class="link menu-link" href="index.html">Студия</a>
+                            <a class="link menu-link" href="./index.html">Студия</a>
                         </li>
                         <li class="nav-item">
                             <a class="link menu-link current" href="">Портфолио</a>
@@ -38,16 +38,62 @@
                     </ul>
                 </nav>
                 <ul class="contacts-link list">
-                    <li class="header-contacts"><a class="mail-link link" href="mailto:info@devstudio.com"><svg
-                                class="icon-contacts" width="16" height="12">
+                    <li class="header-contacts"><a class="mail-link link" href="mailto:info@devstudio.com">
+                            <svg class="icon-contacts" width="16" height="12">
                                 <use href="./imiges/svg/sprite.svg#icon-envelope"></use>
                             </svg>info@devstudio.com</a></li>
-                    <li class="header-contacts"><a class="tel-link link" href="tel:+380961111111"><svg
-                                class="icon-contacts" width="10" height="16">
+                    <li class="header-contacts"><a class="tel-link link" href="tel:+380961111111">
+                            <svg class="icon-contacts" width="10" height="16">
                                 <use href="./imiges/svg/sprite.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button class="burger-btn" type="button" data-menu-open>
+                    <svg class="burger-btn-icon">
+                        <use href="./images/mobile/sprite_mobile.svg#hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+            <!--MOBILE MENU-->
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-container">
+                    <button type="button" class="closed-btn mobile-menu-close" data-menu-close>
+                        <svg class="mobile-close-icon">
+                            <use href="./images/mobile/sprite_mobile.svg#hamburger-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-navigation list">
+                        <li class="mobile-item">
+                            <a class="mobile-link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-item">
+                            <a class="mobile-link link current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-item">
+                            <a class="mobile-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="monile-menu-contacts">
+                        <ul class="contacts list">
+                            <li class="mobile-contacts-item">
+                                <a class="mobile-contacts-link link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-contacts-item">
+                                <a class="mobile-mail-link link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-socials list">
+                            <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Instagram</a>
+                            </li>
+                            <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Twitter</a></li>
+                            <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">Facebook</a>
+                            </li>
+                            <li class="mobile-socials-item"><a class="mobile-socials-link link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <section class="section portfolio-section">
@@ -116,12 +162,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope1.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope1@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-1.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-1@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope1.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope1.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-1.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-1.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet1.webp    1x,
                                         ./images/tablet/portfolio/img_tablet1@2x.webp 2x
@@ -130,12 +176,12 @@
                                         ./images/tablet/portfolio/img_tablet1.jpg    1x,
                                         ./images/tablet/portfolio/img_tablet1@2x.jpg 2x" />
                                     <source media="(min-width:260px)" srcset="
-                                        ./images/mobile/portfolio/img_mobile1.webp    1x,
-                                        ./images/mobile/portfolio/img_mobile1@2x.webp 2x" type="image/webp" />
+                                        ./images/mobile/portfolio/img_mobile_1.webp    1x,
+                                        ./images/mobile/portfolio/img_mobile_1@2x.webp 2x" type="image/webp" />
                                     <source media="(min-width:260px)" srcset="
-                                        ./images/mobile/portfolio/img_mobile1.jpg    1x,
-                                        ./images/mobile/portfolio/img_mobile1@2x.jpg 2x" />
-                                    <img src="./images/mobile/portfolio/img_mobile1.jpg" alt="2 спортсмени з м'ячем">
+                                        ./images/mobile/portfolio/img_mobile_1.jpg    1x,
+                                        ./images/mobile/portfolio/img_mobile_1@2x.jpg 2x" />
+                                    <img src="./images/mobile/portfolio/img_mobile_1.jpg" alt="2 спортсмени з м'ячем">
                                 </picture>
 
                                 <p class="label-portfolio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -154,12 +200,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope2.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope2@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-2.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-2@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope2.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope2.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-2.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-2.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet2.webp    1x,
                                         ./images/tablet/portfolio/img_tablet2@2x.webp 2x
@@ -191,12 +237,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope3.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope3@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-3.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-3@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope3.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope3.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-3.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-3.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet3.webp    1x,
                                         ./images/tablet/portfolio/img_tablet3@2x.webp 2x
@@ -229,12 +275,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope4.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope4@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-4.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-4@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope4.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope4.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-4.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-4.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet4.webp    1x,
                                         ./images/tablet/portfolio/img_tablet4@2x.webp 2x
@@ -267,12 +313,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope5.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope5@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-5.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-5@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope5.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope5.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-5.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-5.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet5.webp    1x,
                                         ./images/tablet/portfolio/img_tablet5@2x.webp 2x
@@ -305,12 +351,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope6.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope6@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-6.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-6@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope6.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope6.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-6.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-6.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet6.webp    1x,
                                         ./images/tablet/portfolio/img_tablet6@2x.webp 2x
@@ -343,12 +389,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope7.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope7@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-7.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-7@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope7.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope7.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-7.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-7.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet7.webp    1x,
                                         ./images/tablet/portfolio/img_tablet7@2x.webp 2x
@@ -380,12 +426,12 @@
                             <div class="portfolio-wrapper">
                                 <picture>
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope8.webp    1x,
-                                        ./images/desktope/portfolio/img_desktope8@2x.webp 2x
+                                        ./images/desktope/portfolio/img_desktope-8.webp    1x,
+                                        ./images/desktope/portfolio/img_desktope-8@2x.webp 2x
                                         " type="image/webp" />
                                     <source media="(min-width: 1200px)" srcset="
-                                        ./images/desktope/portfolio/img_desktope8.jpg    1x,
-                                        ./images/desktope/portfolio/img_desktope8.@2x.jpg 2x" />
+                                        ./images/desktope/portfolio/img_desktope-8.jpg    1x,
+                                        ./images/desktope/portfolio/img_desktope-8.@2x.jpg 2x" />
                                     <source media="(min-width: 768px)" srcset="
                                         ./images/tablet/portfolio/img_tablet8.webp    1x,
                                         ./images/tablet/portfolio/img_tablet8@2x.webp 2x
@@ -485,6 +531,7 @@
             </div>
         </footer>
     </main>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

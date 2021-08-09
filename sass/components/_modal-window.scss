@@ -6,9 +6,9 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
+    text-align: center;
     color: var(--main-color);
 }
 .modal-form-field {
@@ -16,7 +16,7 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     margin-bottom: 12px;
-    display: block;
+    // display: block;
     color: var(--p-text-color);   
 }
 .modal-form-input-wrapper{
@@ -43,6 +43,7 @@
         border-color: var(--accent-color);
         transition: border-color var(--animation);
     }
+    
 }
 .modal-form-icon{
     position: absolute;
@@ -70,6 +71,9 @@
         outline: none;
         border-color: var(--accent-color);
         transition: border-color var(--animation);
+    }
+    @media screen and (min-width: 768px) {
+        height: 120px;
     }
 }
 
@@ -112,9 +116,10 @@
         border-radius: 2px;
         margin-right: 7px;
     }
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .modal-label-link {
     line-height: 1.71;

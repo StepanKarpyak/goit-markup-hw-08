@@ -1,11 +1,3 @@
-// .header {
-//     background-color: var(--secondary-color);
-//     border-bottom: 1px solid var(--border-color);
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14; 
-//     letter-spacing: 0.02em;
-// }
 .menu,
 .contacts-link {
     display: none;
@@ -13,6 +5,8 @@
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
 }
 .header-container {
     display: flex;
@@ -31,7 +25,14 @@
         color: var(--accent-color);
     }
 }
-
+.current {
+        padding-bottom: 32px;
+        padding-top: 32px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+    }
 .mail-link,
 .tel-link {
     display: flex;
@@ -47,25 +48,6 @@
 .icon-contacts {
     margin: 0 10px 0 0;
     fill: currentColor;
-}
-.current {
-    padding-bottom: 32px;
-    padding-top: 32px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: var(--accent-color);
-        bottom: 0;
-        border-radius: 2px;
-    }
 }
 .burger-btn {
     background-color: transparent;
@@ -97,10 +79,7 @@
     .header-contacts {
         margin-bottom: 10px;
     }
-    .navigation {
-        display: flex;
-        align-items: center;
-    }
+    .navigation,
     .menu {
         display: flex;
         align-items: center;
@@ -119,7 +98,28 @@
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-    }  
+    }
+    .current {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        bottom: 0;
+        border-radius: 2px;
+        }
+    }
+    
+
 }
 @media screen and (min-width: 1200px) {
     .contacts-link {
@@ -143,8 +143,3 @@
         letter-spacing: 0.02em;
     }
 }
-// .burger-button-icon {
-//     width: 40px;
-//     height: 40px;
-//     fill: var(--text-color);
-// }

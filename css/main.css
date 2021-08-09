@@ -106,7 +106,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 720px;
   }
 }
 
@@ -150,7 +150,7 @@ body {
 .logo-head {
   padding-bottom: 25px;
   padding-top: 24px;
-  color: #000000;
+  color: var --text-color;
 }
 
 .logo-head:hover, .logo-head:focus {
@@ -192,12 +192,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   background: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  margin: auto;
+  overflow: auto;
 }
 
 .close-btn {
@@ -250,15 +252,15 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--secondary-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
   overflow: auto;
+  pointer-events: none;
 }
 
 .mobile-menu.is-open {
@@ -269,8 +271,11 @@ body {
 
 .mobile-container {
   position: relative;
-  padding-top: 48px;
-  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-menu-close {
@@ -299,10 +304,14 @@ body {
   margin-bottom: 32px;
 }
 
+.contacts {
+  margin-top: auto;
+}
+
 .mobile-link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.175;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -314,19 +323,25 @@ body {
 
 .mobile-contacts-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: 1.76;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
   color: var(--accent-color);
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-contacts-link {
+    font-size: 34px;
+  }
 }
 
 .mobile-mail-link {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.166;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--main-modal-color);
+  color: var(--p-text-color);
 }
 
 .mobile-contacts-item {
@@ -347,6 +362,17 @@ body {
   flex-wrap: wrap;
   font-size: 18px;
   line-height: 1.22;
+  margin-top: 64px;
+}
+
+.mobile-socials-item {
+  margin-bottom: 15px;
+}
+
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .modal-form {
@@ -358,9 +384,9 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+  text-align: center;
   color: var(--main-color);
 }
 
@@ -369,7 +395,6 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 12px;
-  display: block;
   color: var(--p-text-color);
 }
 
@@ -426,6 +451,12 @@ body {
   transition: border-color var(--animation);
 }
 
+@media screen and (min-width: 768px) {
+  .modal-form-message {
+    height: 120px;
+  }
+}
+
 .modal-form-message::placeholder {
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -465,6 +496,13 @@ body {
   cursor: pointer;
   border-radius: 2px;
   margin-right: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-label-link {
@@ -510,6 +548,8 @@ body {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-container {
@@ -532,6 +572,15 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .mail-link,
 .tel-link {
   display: flex;
@@ -550,26 +599,6 @@ body {
 .icon-contacts {
   margin: 0 10px 0 0;
   fill: currentColor;
-}
-
-.current {
-  padding-bottom: 32px;
-  padding-top: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
-.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  bottom: 0;
-  border-radius: 2px;
 }
 
 .burger-btn {
@@ -604,10 +633,7 @@ body {
   .header-contacts {
     margin-bottom: 10px;
   }
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
+  .navigation,
   .menu {
     display: flex;
     align-items: center;
@@ -625,6 +651,24 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+  }
+  .current {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  .current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    border-radius: 2px;
   }
 }
 

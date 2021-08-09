@@ -13,12 +13,13 @@
 .logo-head {
     padding-bottom: 25px;
     padding-top: 24px;
-    color: #000000;
+    color: var (--text-color);
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
 }
+
 .logo-foot {
     color: var(--secondary-color);
     font-family: var(--secondary-font);
@@ -30,4 +31,7 @@
     .logo {
         margin-right: 50px;
     }
+}
+@media screen and (min-width: 1200px) {
+    
 }
