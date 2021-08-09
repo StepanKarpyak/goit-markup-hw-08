@@ -165,12 +165,6 @@ body {
   line-height: 1.16;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 50px;
-  }
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -199,7 +193,7 @@ body {
   border-radius: 4px;
   padding: 40px;
   margin: auto;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -259,7 +253,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   pointer-events: none;
 }
 
@@ -552,12 +547,6 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .container {
   padding-bottom: 0;
 }
@@ -630,8 +619,12 @@ body {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .header-contacts {
+  .header-contacts:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .header-contacts {
+    display: flex;
+    margin-left: auto;
   }
   .navigation,
   .menu {
@@ -660,7 +653,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
-  .current::after {
+  .current::before {
     content: '';
     display: block;
     position: absolute;
@@ -677,6 +670,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .header-contacts:not(:last-child) {
+    margin-bottom: 0px;
+  }
   .nav-item:not(:first-child) {
     margin-left: 50px;
   }
@@ -690,9 +686,15 @@ body {
     padding-bottom: 32px;
     padding-top: 32px;
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.15;
     letter-spacing: 0.02em;
   }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero {
