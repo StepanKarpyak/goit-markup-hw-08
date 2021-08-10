@@ -1265,6 +1265,9 @@ body {
   .footer-input {
     width: 358px;
   }
+  .footer-button {
+    margin-top: 0px;
+  }
 }
 
 .menu-button {
