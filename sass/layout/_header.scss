@@ -140,7 +140,8 @@
     .menu-link,
     .mail-link,
     .tel-link {
-        display: block;
+        display: flex;
+        align-items: center;
         padding-bottom: 32px;
         padding-top: 32px;
         font-weight: 500;

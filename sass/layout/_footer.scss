@@ -5,6 +5,7 @@
 }
 .footer-section {
     text-align: center;
+    
 }
 .footer-item:not(:first-child) {
     margin-top: 9px;
@@ -28,21 +29,16 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.address {
+.addres {
     margin-bottom: 9px;
 }
 .foot-contacts:not(:last-child) {
     margin-bottom: 9px;
-}.addres{
-    color: var(--secondary-color);
 }
-.foot-contacts{
-    color: var(--footer-link-color);
+.addres{
+    color: var(--secondary-color);
 }
 
-.address {
-    color: var(--secondary-color);
-}
 .foot-contacts {
     color: rgba(255, 255, 255, 0.6);
 }
@@ -63,6 +59,7 @@
     align-items: center;
     margin-top: 20px;
 }
+
 .social-list-footer {
     display: flex;
     width: 206px;
@@ -88,7 +85,7 @@
     }
 }
 .footer-form {
-    display: block;
+    // display: block;
     margin-top: 60px;
 }
 .footer-input {
@@ -132,35 +129,35 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer-tablet-section {
+    .footer-tablet {
         display: flex;
         justify-content: space-around;
+        align-items: baseline;
     }
     .footer-content {
         margin-top: 0;
     }
     .footer-input {
         width: 450px;
+        display: block;
+        margin: 0 auto;
     }
-    .footer-form-label {
-        margin-right: 144px;
-        margin-left: 144px;
-    }
-    .futer-tablet {
-        display: flex;
-        align-items:baseline;
-        justify-content: space-between;
-    }
+    // .footer-form-label {
+    //     margin-right: 144px;
+    //     margin-left: 144px;
+    // }
+    // .footer-tablet {
+    //     display: flex;
+    //     align-items:baseline;
+    //     justify-content: space-between;
+    // }
 }
 @media screen and (min-width: 1200px) {
-    .footer-form {
-        margin-left:auto;
-
-    }
     .footer-section {
         display: flex;
-        align-items: baseline;
         justify-content: space-between;
+        text-align: left;
+        align-items: baseline;
     }
     .footer-nav {
         margin-left: 50px;
@@ -180,5 +177,13 @@
     .footer-button {
         margin-top: 0px;
     }
-    
+
+    .footer-form {
+        margin: top 0px;;
+    }
+    // .futer-tablet {
+    //     display: flex;
+    //     justify-content:space-around;
+    // }
+
 }

@@ -97,6 +97,7 @@
 .modal-checkbox {
     border: 2px solid var(--p-text-color);
 }
+
 .modal-checkbox-label {
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -105,6 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     &::before {
         display: block;
@@ -121,6 +123,11 @@
         line-height: 1.71;
     }
 }
+// .check {
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
 .modal-label-link {
     line-height: 1.71;
     letter-spacing: 0.03em;
